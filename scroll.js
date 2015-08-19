@@ -3,7 +3,7 @@
 
 $(document).ready(function(){
     var URL = "1z9jwuqM_tk6q6znxgJ9s7-mi1fkiK7ErHSMY6ix_7D8";
-    Tabletop.init( { key: URL, callback: convertToGeoJSON, simpleSheet: true } );
+    Tabletop.init( { key: URL, callback: convertToGeoJSON1, simpleSheet: true } );
     
     //africa
     $(".c1").click(function(){
@@ -37,7 +37,8 @@ $(document).ready(function(){
 
 articles = [];
 
-function convertToGeoJSON(data) {
+
+function convertToGeoJSON1(data) {
     console.log(data);
     for(i = 0; i < data.length; i++) {
         article = { date: data[i]["date"],
@@ -50,14 +51,16 @@ function convertToGeoJSON(data) {
                 }
         articles.push(article);
     }
-    for(n=0;n<7; n++){
+    for(n=0; n<10; n++){
         var bullet = "<span>" + data[n]["name"] + "</span>";
+        var nameNDate = "<h4>" + data[n]["author"] + " // <i></i>" + data[n]["date"] + "</h4>";
         var artLink = data[n]["link"];
-        var articleThing = "<li>" + bullet + "<br><a>" + artLink + "</a></li>";
+        var articleThing = "<li>" + bullet + "<br>" + nameNDate + "<br><a>" + artLink + "</a></li>";
         $("#articleWindow").children("ul").append(articleThing);
         var stringy = "ul li:nth-child(" + (n+1) + ")";
         $("#articleWindow").find(stringy).children("a").attr("href", artLink);
-        $("#articleWindow").children("h3").text("North America");
+        $("#articleWindow").children("h3").text("News for North America");
+        $(".artWind i").addClass("fa-li fa fa-globe");
     }
 }
    

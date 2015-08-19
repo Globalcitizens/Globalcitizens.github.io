@@ -28,8 +28,9 @@ $(document).ready(function(){
     //south america
     $(".c6").click(function(){
         document.getElementById("articleWindow2").style.display = "inline-block";
-    })
+    }),
     
+    $("#articleWindow4").children("h3").text("News for Asia");
 });
 
 articles = [];
@@ -47,14 +48,14 @@ function convertToGeoJSON4(data) {
                 }
         articles.push(article);
     }
-    for(n=0;n<7; n++){
+    for(n=0; n<10; n++){
         var bullet = "<span>" + data[n]["name"] + "</span>";
+        var nameNDate = "<h4>" + data[n]["author"] + " // <i></i>" + data[n]["date"] + "</h4>";
         var artLink = data[n]["link"];
-        var articleThing = "<li>" + bullet + "<br><a>" + artLink + "</a></li>";
+        var articleThing = "<li>" + bullet + "<br>" + nameNDate + "<br><a>" + artLink + "</a></li>";
         $("#articleWindow4").children("ul").append(articleThing);
         var stringy = "ul li:nth-child(" + (n+1) + ")";
         $("#articleWindow4").find(stringy).children("a").attr("href", artLink);
-        $("#articleWindow4").children("h3").text("Asia");
     }
 }
    

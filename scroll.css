@@ -19,11 +19,13 @@ body {
 }
 
 section {
-  float:left;
-  width:100%;
-  background:#fff;
-  position:relative;
-  box-shadow:0 0 5px 0px #333;
+    float:left;
+    width:100%;
+    background:#fff;
+    position:relative;
+    box-shadow:0 0 5px 0px #333;
+    margin-bottom: 30px;
+    
 }
 
 section2 {
@@ -212,20 +214,26 @@ p a {
 }
 
 .artWind{
-	width: 40%;
-    height: 600px;
+	width: 43%;
+    height: 400px;
 	position:absolute;
     display:none;
+    margin: auto;
     font-size: 10px;
-	top:25%;
-	bottom: 50%;
-	right: 30%;
+    padding: 10px;
+    margin-top: 150px;
+	right: 28%;
 	border:2px solid;
 	background:#FFFFFF;
-	border-radius:5px;
+	border-radius:9px;
     z-index: 10000;
+    overflow: scroll;
 }
 
+.artWind a {
+    color: gray;
+    font-size: 12px;
+}
 
 .close{
 	right:5;
@@ -233,9 +241,54 @@ p a {
 	float:right;
 }
 
+.artWind li{
+    margin-bottom: 35px;
+}
+
 .artWind span {
-    color:blue;
-    font-size:15px;
+    color:#019875;
+    font-size:18px;
 }    
 
+.artWind h3 {
+    font-size: 30px;
+    text-align: center;
+    text-decoration: underline;
+    margin-bottom: 30px;
+}
 
+.UGH {
+    text-align: center;
+    display:inline-block;
+    font-size:80px;
+    margin-left:42%;
+    margin-top: 30px;
+}
+
+#UGH {
+    text-align: center;
+    display:inline-block;
+    font-size:80px;
+    margin-left:45%;
+    margin-top: 30px;
+}
+
+.content h2 {
+    text-align:center;
+}
+.content .img-circle {
+    margin-left: 25%;
+}
+
+#footer {
+    text-align: right;
+    margin-bottom: -30px;
+    padding-right: 30px;
+}
+.artWind h4 {
+    color: #4B77BE;
+    text-align:left;
+    font-size: 15px;
+    margin-bottom: -12px;
+    margin-top: auto;
+}

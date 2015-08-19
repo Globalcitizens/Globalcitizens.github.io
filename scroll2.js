@@ -30,6 +30,8 @@ $(document).ready(function(){
         document.getElementById("articleWindow2").style.display = "inline-block";
     })
     
+    $("#articleWindow2").children("h3").text("News for South America");
+    
 });
 
 articles = [];
@@ -47,14 +49,14 @@ function convertToGeoJSON2(data) {
                 }
         articles.push(article);
     }
-    for(n=0;n<7; n++){
+    for(n=0; n<10; n++){
         var bullet = "<span>" + data[n]["name"] + "</span>";
+        var nameNDate = "<h4>" + data[n]["author"] + " // <i></i>" + data[n]["date"] + "</h4>";
         var artLink = data[n]["link"];
-        var articleThing = "<li>" + bullet + "<br><a>" + artLink + "</a></li>";
+        var articleThing = "<li>" + bullet + "<br>" + nameNDate + "<br><a>" + artLink + "</a></li>";
         $("#articleWindow2").children("ul").append(articleThing);
         var stringy = "ul li:nth-child(" + (n+1) + ")";
         $("#articleWindow2").find(stringy).children("a").attr("href", artLink);
-        $("#articleWindow2").children("h3").text("South America");
     }
 }
    
