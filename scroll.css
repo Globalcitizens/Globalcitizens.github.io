@@ -26,6 +26,18 @@ section {
     box-shadow:0 0 5px 0px #333;
     margin-bottom: 30px;
 }
+
+section2 {
+margin-top:200px;
+  margin-top:50px;
+   float:left;
+   width:100%;
+   background:#fff;
+   position:relative;
+  box-shadow:0 0 5px 0px #333;
+  box-shadow: 0 5px 0px #333;
+    
+ }
   
 
 
