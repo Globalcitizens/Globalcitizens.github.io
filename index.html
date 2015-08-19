@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    
+    <link rel="stylesheet" type="text/css" media="screen,projection" href="cssmap-continents.css"/> 
+    <script  type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script type="text/javascript" src="jquery.cssmap.js"></script>
+    <script src="tabletop1.3.4.js"></script>
+    <script type="text/javascript">
+      $(function($){
+        $('#map-continents').cssMap({'size' : 960});
+       });
+    </script>
+    
+    <script type="text/javascript">
+      window.onload = function() { init() };
+
+      var public_spreadsheet_url = 'https://docs.google.com/spreadsheets/d/1bhXCuIKgDcIjuiZKiibB5xxT3TRWVBPgk9m01u-3bF4/pubhtml';
+
+      function init() {
+        Tabletop.init( { key: public_spreadsheet_url,
+                         callback: showInfo,
+                         simpleSheet: true } )
+      }
+
+      function showInfo(data, tabletop) {
+        console.log(data);
+      }
+    </script>
+    
+    <script type="text/javascript">
+      window.onload = function() { init() };
+
+      var public_spreadsheet_url = 'https://docs.google.com/spreadsheets/d/1wroLNBMWBQWCgTt53Xy57z_YOyUBsKrtrs40HFynmSU/pubhtml';
+
+      function init() {
+        Tabletop.init( { key: public_spreadsheet_url,
+                         callback: showInfo,
+                         simpleSheet: true } )
+      }
+
+      function showInfo(data, tabletop) {
+        console.log(data);
+      }
+    </script>
+    
+    <script type="text/javascript">
+      window.onload = function() { init() };
+
+      var public_spreadsheet_url = 'https://docs.google.com/spreadsheets/d/1TXSRkndhvDR7u9rCp2jS-AQpYs_yK-jJFtQLL3LyG1Y/pubhtml';
+
+      function init() {
+        Tabletop.init( { key: public_spreadsheet_url,
+                         callback: showInfo,
+                         simpleSheet: true } )
+      }
+
+      function showInfo(data, tabletop) {
+        console.log(data);
+      }
+    </script>
+    
+    <script type="text/javascript">
+      window.onload = function() { init() };
+
+      var public_spreadsheet_url = 'https://docs.google.com/spreadsheets/d/1P31JVVrzeak0qhriGnO0XgZhwJy4ugb-vECWFXotTq4/pubhtml';
+
+      function init() {
+        Tabletop.init( { key: public_spreadsheet_url,
+                         callback: showInfo,
+                         simpleSheet: true } )
+      }
+
+      function showInfo(data, tabletop) {
+        console.log(data);
+      }
+    </script>
+    
+    <script type="text/javascript">
+      window.onload = function() { init() };
+
+      var public_spreadsheet_url = 'https://docs.google.com/spreadsheets/d/1z9jwuqM_tk6q6znxgJ9s7-mi1fkiK7ErHSMY6ix_7D8/pubhtml';
+
+      function init() {
+        Tabletop.init( { key: public_spreadsheet_url,
+                         callback: showInfo,
+                         simpleSheet: true } )
+      }
+
+      function showInfo(data, tabletop) {
+        console.log(data);
+      }
+    </script>
+    
+    <script type="text/javascript">
+      window.onload = function() { init() };
+
+      var public_spreadsheet_url = 'https://docs.google.com/spreadsheets/d/11rZSzSafxlPQOL8UNUdLLhpQLZlpM-kfiQtJ13Vs_No/pubhtml';
+
+      function init() {
+        Tabletop.init( { key: public_spreadsheet_url,
+                         callback: showInfo,
+                         simpleSheet: true } )
+      }
+
+      function showInfo(data, tabletop) {
+        console.log(data);
+      }
+    </script>
+    
+    <link rel="stylesheet" type="text/css" href="scroll.css">
+    <script src="scroll.js" type="text/javascript"></script>
+    <script src="scroll2.js" type="text/javascript"></script>
+    <script src="scroll3.js" type="text/javascript"></script>
+    <script src="scroll4.js" type="text/javascript"></script>
+    <script src="scroll5.js" type="text/javascript"></script>
+    <script src="scroll6.js" type="text/javascript"></script>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans|Maven+Pro:500' rel='stylesheet' type='text/css'>
+     <!--Bootstrap stuff-->
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    
+    
+    <script src="scroll.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="scroll.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href='http://fonts.googleapis.com/css?family=Lato&effect=3d-float' rel='stylesheet' type='text/css'>
+    
+    <script src="index.js" type="text/javascript"></script>
+    
+    
+</head>
+    
+    
+    
+
+<body>
+
+    
+<header>
+   <h1><div class="font-effect-3d-float">Global Citizens</div></h1>
+  <h4>
+    |educating the youth one article at a time|
+  </h4>
+  
+</header>
+    
+<div class="artWind" id="articleWindow">
+	<button class= "close" onclick= "exit1()">X</button><br>
+    <h3>Articles</h3>
+    <ul></ul>
+    
+	<script>
+	function exit1() {
+    document.getElementById("articleWindow").style.display = "none";
+	}
+	</script>
+
+
+</div>
+    
+<div class="artWind" id="articleWindow2">
+	<button class= "close" onclick= "exit2()">X</button><br>
+    <h3>Articles</h3>
+    <ul></ul>
+    
+	<script>
+	function exit2() {
+    document.getElementById("articleWindow2").style.display = "none";
+	}
+	</script>
+
+
+</div>
+
+<div class="artWind" id="articleWindow3">
+	<button class= "close" onclick= "exit3()">X</button><br>
+    <h3>Articles</h3>
+    <ul></ul>
+    
+	<script>
+	function exit3() {
+    document.getElementById("articleWindow3").style.display = "none";
+	}
+	</script>
+
+
+</div>
+
+<div class="artWind" id="articleWindow4">
+	<button class= "close" onclick= "exit4()">X</button><br>
+    <h3>Articles</h3>
+    <ul></ul>
+    
+	<script>
+	function exit4() {
+    document.getElementById("articleWindow4").style.display = "none";
+	}
+	</script>
+
+
+</div>
+
+<div class="artWind" id="articleWindow5">
+	<button class= "close" onclick= "exit5()">X</button><br>
+    <h3>Articles</h3>
+    <ul></ul>
+    
+	<script>
+	function exit5() {
+    document.getElementById("articleWindow5").style.display = "none";
+	}
+	</script>
+
+
+</div>
+    
+<div class="artWind" id="articleWindow6">
+	<button class= "close" onclick= "exit6()">X</button><br>
+    <h3>Articles</h3>
+    <ul></ul>
+    
+	<script>
+	function exit6() {
+    document.getElementById("articleWindow6").style.display = "none";
+	}
+	</script>
+
+</div>
+
+
+<div id="map-continents">
+    <ul class="continents">
+        <li class="c1"><a href="#africa">Africa</a></li>
+        <li class="c2"><a href="#asia">Asia</a></li>
+        <li class="c3"><a href="#australia-and-southern-pacific">Australia and Southern Pacific</a></li>
+        <li class="c4"><a href="#europe">Europe</a></li>
+        <li class="c5"><a href="#north-america">North America</a></li>
+        <li class="c6"><a href="#south-america">South America</a></li>
+    </ul>
+</div>
+    
+<section class="main">
+<a class="arrow-wrap" href="#content">
+<span class="arrow"></span>
+
+</a>
+    <div class="content" id="content">
+        <h5>About Us</h5>
+
+        <br></br>
+    <div class="container marketing">    
+        <div class="row">
+        <div class="col-lg-3">
+          <img src="http://i809.photobucket.com/albums/zz19/Hannah_Ueshiro/a9a8b668-2075-4770-90b2-8681a0c63b0d_zpsxoslvfcc.jpg" alt="Generic placeholder image" width="140" height="140" class="img-circle">
+          <h2>Hannah Ueshiro</h2>
+          <p>Hannah is a junior at Sachem East High School on Long Island, NY. In her free time she likes to play soccer, read, go to the beach, paint/draw, and listen to music. Prior to participating in the Girls Who Code Summer Immersion Praogram, Hannah did not have any experience in computer science, however was always interested in engineering and technology. She plans on pursuing computer sciecne for the remainder of her high school carrer and possibly in college.</p>
+          <p>
+          <a href="mailto:hannahueshiro@gmail.com">hannahueshiro@gmail.com</a></p>
+            </div><!-- /.col-lg-4 -->
+        <div class="col-lg-3">
+          <img class="img-circle" src="http://i809.photobucket.com/albums/zz19/Hannah_Ueshiro/daab9674-2ffb-48c3-9f67-84dfc24ed61a_zpsieeoomax.jpg" alt="Generic placeholder image" width="140" height="140">
+          <h2>Tess Laren</h2>
+          <p>Tess Laren is a senior at Harriton High School in Pennsylvania.  This summer was the first time Tess coded when she was accepted into the the intensive seven week program held by Girls Who Code.  During those seven weeks she learned many computer programming languages ranging from Python to JavaScript and completed an array of projects in those areas.  Outside of coding, Tess enjoys reading, painting, going to concerts, and traveling.  </p>
+          <p>
+          <a href="mailto:tessl1212@gmail.com">tessl1212@gmail.com</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-3">
+          <img class="img-circle" src="http://i77.photobucket.com/albums/j48/charbrosnan/FullSizeRender%201_zpstwhhzdme.jpg" width="140" height="140">
+          <h2>Charlotte Brosnan</h2>
+          <p>Charlotte Brosnan is a junior at School of the Holy Child in Rye, NY. Prior to joining Girls Who Code, she had never coded before, but was enthusiastic about technology. She now loves front-end developing and Obamafying pictures of Gigi Hadid. She plays lacrosse, soccer, and squash for her school teams. Outside of school she enjoys interior design, cooking, and traveling. If she is not at home in Larchmont playing with her dog, Lucy, she is in Montauk laying on the beach.</p>
+          <p><a href="mailto:c.brosnan@holychildrye.org">c.brosnan@holychildrye.org</a>
+          </p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-3">
+          <img class="img-circle" src="http://i77.photobucket.com/albums/j48/charbrosnan/ac86d6ff-7ed9-45c9-b1ea-054d691a834c_zpslncsxqlm.jpg" width="140" height="140">
+          <h2>Tessa Jarden</h2>
+          <p>Tessa Jarden is a feminist, video game enthusiast, and aspiring computer scientist currently in her senior year of high school at Phillips Academy in Andover, MA. She is proficient in web design and mathematical programming in Python, with additional experience in animation and data structures. She spends her days hanging out with friends, playing video games, and watching standup on Netflix.
+</p>
+            <p>
+                <a href="mailto:tessa.jarden@gmail.com">tessa.jarden@gmail.com</a>
+            </p>
+    </div>
+             </div><!-- /.col-lg-4 -->
+      </div><!-- /.row -->
+    
+    </section>
+    
+    
+   
+    
+    
+    <section2>
+
+    <div class="mission" id="mission">
+    
+        <h6> Mission</h6>
+    <p2>
+
+        Global Citizen is a website that uses data visualization in order to make staying informed about politics and international affairs fast and simple. Our mission is to simplify global political issues, and give teens and young people an effective and easy way to educate themselves on basic geography and global issues. 
+        </p2>
+            
+
+    
+    </div>
+                
+    
+</section2>
+      
+  
+</body>
+    
+</html>
+
+
+
+
+
+
+
+
+
+
+  
+  
+      
+   
