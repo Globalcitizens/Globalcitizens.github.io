@@ -2,6 +2,7 @@
 
 
 $(document).ready(function(){
+    $('.bxslider').bxSlider();
     var URL = "1z9jwuqM_tk6q6znxgJ9s7-mi1fkiK7ErHSMY6ix_7D8";
     Tabletop.init( { key: URL, callback: convertToGeoJSON1, simpleSheet: true } );
     
