@@ -320,9 +320,21 @@ p a {
     margin-bottom: 45px;
 }
 
-#slider {
-    width:40%;
-    margin:auto;
+#slider{
+    margin-bottom: 20px;
+}
+
+.info {
+    width:25%;
+    height: width;
+    display:inline-block;
+    margin-left: 5%;
+}
+
+#squarefo {
+    width:30%;
+    display:inline-block;
+    margin-left:5%;
 }
 
 #slider h4 {
