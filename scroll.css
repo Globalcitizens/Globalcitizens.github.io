@@ -261,20 +261,29 @@ p a {
     margin-bottom: 30px;
 }
 
-.UGH {
+#mission h6{
     text-align: center;
-    display:inline-block;
-    font-size:80px;
-    margin-left:42%;
-    margin-top: 30px;
+    font-size: 36px;
+    margin:auto;
+    margin-top: 35px;
+    margin-bottom: 20px;
 }
 
-#UGH {
+#aboutUs h5{
     text-align: center;
-    display:inline-block;
-    font-size:80px;
-    margin-left:45%;
-    margin-top: 30px;
+    font-size: 36px;
+    margin:auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#mission p {
+    color:#00B16A;
+    font-size: 20px;
+    width: 65%;
+    text-align: center;
+    margin:auto;
+    margin-bottom: 20px;
 }
 
 .content h2 {
@@ -295,4 +304,18 @@ p a {
     font-size: 15px;
     margin-bottom: -12px;
     margin-top: auto;
+}
+#socialMedia {
+    position: absolute;
+    margin-left: 80%;
+    margin-top: 20px;
+}
+
+#clocks {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    width: 95%;
+    margin: auto;
+    margin-bottom: 45px;
 }
