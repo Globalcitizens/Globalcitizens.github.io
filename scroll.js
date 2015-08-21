@@ -31,6 +31,9 @@ $(document).ready(function(){
         document.getElementById("articleWindow2").style.display = "inline-block";
     })
     
+    $("#articleWindow").children("h3").text("News for North America");
+    $(".artWind i").addClass("fa-li fa fa-globe");
+    
 });
 
 
@@ -41,6 +44,8 @@ articles = [];
 
 function convertToGeoJSON1(data) {
     console.log(data);
+    var dataLength = data.length;
+    var useThis = dataLength - 1;
     for(i = 0; i < data.length; i++) {
         article = { date: data[i]["date"],
                     name: data[i]["name"],
@@ -52,16 +57,14 @@ function convertToGeoJSON1(data) {
                 }
         articles.push(article);
     }
-    for(n=0; n<10; n++){
+    for(n=useThis; n > useThis - 7; n--){
         var bullet = "<span>" + data[n]["name"] + "</span>";
         var nameNDate = "<h4>" + data[n]["author"] + " // <i></i>" + data[n]["date"] + "</h4>";
         var artLink = data[n]["link"];
         var articleThing = "<li>" + bullet + "<br>" + nameNDate + "<br><a>" + artLink + "</a></li>";
         $("#articleWindow").children("ul").append(articleThing);
-        var stringy = "ul li:nth-child(" + (n+1) + ")";
+        var stringy = "ul li:nth-child(" + (dataLength - n) + ")";
         $("#articleWindow").find(stringy).children("a").attr("href", artLink);
-        $("#articleWindow").children("h3").text("News for North America");
-        $(".artWind i").addClass("fa-li fa fa-globe");
     }
 }
    

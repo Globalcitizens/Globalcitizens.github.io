@@ -296,7 +296,7 @@ p a {
 #footer {
     text-align: right;
     margin-bottom: -30px;
-    padding-right: 30px;
+    padding-right: 40px;
 }
 .artWind h4 {
     color: #4B77BE;
@@ -344,4 +344,8 @@ p a {
     margin:auto;
     margin-top: 35px;
     margin-bottom: 20px;
+}
+
+#footer img {
+    display: none; 
 }
