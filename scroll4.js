@@ -32,6 +32,6 @@ function convertToGeoJSON4(data) {
         var articleThing = "<li>" + bullet + "<br>" + nameNDate + "<br><a>" + artLink + "</a></li>";
         $("#articleWindow4").children("ul").append(articleThing);
         var stringy = "ul li:nth-child(" + (dataLength - n) + ")";
-        $("#articleWindow4").find(stringy).children("a").text("CATS");
+        $("#articleWindow4").find(stringy).children("a").attr("href", artLink);
     }
 }

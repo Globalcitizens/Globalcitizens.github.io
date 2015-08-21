@@ -13,7 +13,6 @@ articles = [];
 function convertToGeoJSON2(data) {
     console.log(data);
     var dataLength = data.length;
-    console.log(dataLength);
     var useThis = dataLength - 1;
     for(i = 0; i < data.length; i++) {
         article = { date: data[i]["date"],
